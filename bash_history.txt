@@ -1,0 +1,15 @@
+echo "cat, dog, hamster." > Pets.txt
+echo "horse, camel, donkey." > Pack_animals.txt
+cat Pets.txt Pack_animals.txt > Human_Friends
+ls
+mkdir Animals
+mv Pack_animals.txt Pets.txt > Animals/
+mv Pack_animals.txt Animals/
+mv Pets.txt Animals/
+ls
+cd Animals/
+ll
+sudo apt update && apt upgrade
+sudo apt install mysql-server
+apt install telegram-desktop
+apt purge telegram-desktop
