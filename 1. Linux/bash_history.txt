@@ -11,5 +11,6 @@ cd Animals/
 ll
 sudo apt update && apt upgrade
 sudo apt install mysql-server
-apt install telegram-desktop
-apt purge telegram-desktop
+sudo dpkg - i mysql-connector-j_8.0.32-1ubuntu22.04_all.deb
+sudo dpkg -r mysql-connector-j
+sudo apt-get autoremove
