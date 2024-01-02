@@ -10,7 +10,7 @@ ls
 cd Animals/
 ll
 sudo apt update && apt upgrade
-sudo apt install mysql-server
+docker run --detach --name some-mariadb -p 1433 --env MARIADB_ROOT_PASSWORD=2312  mariadb:latest
 sudo dpkg - i mysql-connector-j_8.0.32-1ubuntu22.04_all.deb
 sudo dpkg -r mysql-connector-j
 sudo apt-get autoremove
